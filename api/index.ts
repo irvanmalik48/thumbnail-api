@@ -68,7 +68,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
                         width: 100%;
                         background-color: #333;
                         color: #fff;
-                        font-size: 52px;
+                        font-size: 56px;
                         padding: 40px 60px 50px 60px;
                         position: fixed;
                         bottom: 0;
@@ -79,7 +79,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             
                     .credit {
                         font-family: 'Roboto', sans-serif;
-                        font-size: 24px;
+                        font-size: 32px;
                         font-weight: normal;
                         opacity: 70%;
                     }
