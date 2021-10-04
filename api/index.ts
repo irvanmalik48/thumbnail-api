@@ -7,7 +7,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     req.query.name == undefined ? "No author specified" : req.query.name;
   const emailP: any =
     req.query.email == undefined ? " (no email specified) " : req.query.email;
-  const dateP: any = req.query.date == undefined ? "No date specified" : req.query.date;
+  const dateP: any = req.query.date == undefined ? "-" : req.query.date;
   const colorP: any = req.query.color == undefined ? "#66CCCC" : "#" + req.query.color;
   const rawTags: any = req.query.tags;
   const tagsP: any =
@@ -17,7 +17,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             return `#${tag}`;
           })
           .join(" ") || ""
-      : "No tags given";
+      : "-";
 
   function content(
     title: string,
